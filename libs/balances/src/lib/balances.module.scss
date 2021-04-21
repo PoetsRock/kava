@@ -1,0 +1,121 @@
+.app-container {
+  left: 4%;
+  position: relative;
+}
+
+.card {
+  border-radius: 24px;
+  margin: 8px;
+  padding: 8px 16px;
+}
+
+.p-card-body {
+  position: relative;
+  width: 100%;
+  padding: 0;
+}
+
+.p-card {
+  border-radius: 16px !important;
+  margin: 16px 0;
+  padding: 0 !important;
+}
+
+.p-card .p-card-body {
+  padding: 0 !important;
+}
+
+.p-card-content {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  padding: 4px 8px !important;
+
+  img {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+
+  .denom-asset {
+    font-weight: bold;
+  }
+
+  .p-button.main-button {
+    border-radius: 8px;
+    margin: 0 4px;
+    height: 36px;
+    width: 136px;
+  }
+}
+
+.balances {
+  .p-card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 16px;
+  }
+}
+
+.asset-current-price {
+  font-size: 12px;
+  font-weight: 400;
+  color: #a2a2a2;
+}
+
+.locked-per-asset, .available-per-asset {
+  font-weight: 600;
+}
+
+.total-per-asset {
+  .total-coins{
+    font-weight: 600;
+  }
+
+  .total-balance {
+    font-size: 12px;
+    font-weight: 400;
+    color: #a2a2a2;
+  }
+}
+
+
+.balance-total {
+  .label {
+    font-weight: 600;
+  }
+
+  .amount {
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+
+.total-available, .total-locked {
+  .pi-lock, .label {
+    font-size: 12px;
+  }
+
+  .amount {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+.balance-sub-totals > div {
+  margin: 0 16px;
+}
+
+.labels {
+  width: 47%;
+  left: 32px;
+  position: absolute;
+  top: -40px;
+}
+
+.sub-totals-section {
+  position: relative;
+  top: 5vh;
+}

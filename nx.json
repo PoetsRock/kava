@@ -1,0 +1,26 @@
+{
+  "implicitDependencies": {
+    "package.json": { "dependencies": "*", "devDependencies": "*" },
+    ".eslintrc.json": "*"
+  },
+  "affected": { "defaultBase": "master" },
+  "npmScope": "kava-demo",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "accessToken": "ODBkNjc1NWUtYmQyNC00OGY2LWIwOWQtYmE2ZjEzZDg2ZWIyfHJlYWQtd3JpdGU=",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
+      }
+    }
+  },
+  "projects": {
+    "kava": { "tags": [] },
+    "kava-e2e": { "tags": [], "implicitDependencies": ["kava"] },
+    "data": { "tags": ["data", "shared"] },
+    "balances": { "tags": ["ui", "shared"] },
+    "types": { "tags": ["types", "shared"] }
+  }
+}
